@@ -3,14 +3,8 @@ const { MongoClient, ObjectId } = require("mongodb");
 const cors = require("cors");
 const WebSocket = require("ws");
 const http = require("http");
-const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-const chatAgent = require("./services/participantResponse");
-const participantResponse = require("./services/participantResponse");
-const processAndStoreStory = require("./services/storyService");
 const movieSearch = require("./services/movieSearch");
-const { OAuth2Client } = require('google-auth-library');
-const gClient = new OAuth2Client("701927321552-fsujubeohfqfp8mpm27k431v334m93l3.apps.googleusercontent.com");
 
 const app = express();
 const server = http.createServer(app);
